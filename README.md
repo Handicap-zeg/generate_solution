@@ -1,7 +1,7 @@
 目录结构
 mathfusionqa_math/: 原始 Parquet 数据集文件夹。
 
-step1_generate_solutions.py: 核心推理脚本（分片逻辑）。
+step1_generate_solutions.py: 核心推理脚本（分片）。
 
 run_parallel.sh: 自动检测 GPU 并启动多进程并行的 shell 脚本。
 
@@ -16,7 +16,7 @@ pip install -r requirements.txt
 开始
 
 1. 配置路径
-   打开 step1_generate_solutions.py，修改顶部的QWQ-32B模型路径：
+   打开 step1_generate_solutions.py，,模型的huggingface路径为https://huggingface.co/Qwen/QwQ-32B ，修改顶部的QWQ-32B模型路径：
 
 Python
 QWQ_MODEL_PATH = "/你的模型实际路径/QwQ-32B"
